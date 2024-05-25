@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<link rel="stylesheet" href="{{url_for('static',filename='style/call.css')}}">
+</head>
+<body> <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>CropVision</h1>
+    <p style="color: black;background-color: rgba(207, 207, 207, 0.866);">CropVision Welcomes you on our website, Hope you are earning well from your farm 
+      but we are here for you to provide some suggetions about your crop cultivation 
+    We recommends you to which crop you should grow in your farm for better yields. Its 
+    very easy to predict which crop you should grow on the basis of your soil nutrients 
+    just you need to know your soil nutrients for this you can test your soil in lab.</p>
+    <br>
+    <a href=" ">Let's Start New Journey With CropVision</a>
+    <br><br>
+<div class="contact-form">
+ <marquee dir="down"><h2>Contact Us</h2></marquee> 
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter Your Name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter Your Email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Enter Messaage Here" name="message" required></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html> 
