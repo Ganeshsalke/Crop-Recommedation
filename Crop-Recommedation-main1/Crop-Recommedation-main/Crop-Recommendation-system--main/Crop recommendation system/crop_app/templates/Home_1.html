@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CropVision</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/myhome.css')}}">
+  <!--  <link rel="stylesheet" href="{{url_for('static',filename='style/call.css')}}">-->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/login">login</a></li>
+          <li><a href="/Home_1">Home</a></li>
+          <li><a href="/about">About</a></li>
+         <!--<li><a href="#">Services</a></li>-->
+          <li><a href="/contact">Contact</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>CropVision</h1>
+      <p style="color: black;background-color: rgba(207, 207, 207, 0.866);">CropVision Welcomes you on our website, Hope you are earning well from your farm 
+        but we are here for you to provide some suggetions about your crop cultivation 
+      We recommends you to which crop you should grow in your farm for better yields. Its 
+      very easy to predict which crop you should grow on the basis of your soil nutrients 
+      just you need to know your soil nutrients for this you can test your soil in lab.</p>
+      <br>
+      <!--<h3 style="color: black;">Let's Start New Journey With CropVision</h3>-->
+      <a href="https://www.india.gov.in/topics/agriculture">Let's Start New Journey With CropVision</a>
+      <br><br>
+      <h2 style="color: black;">Click following button for Crop recommandation</h2>
+    </main>
+     <form action="/Predict">
+      <input type="submit" id="Predict" name="Predict" action="/Predict" value="Predict">
+     
+     </form><!--
+     <br><br><br><br>
+     <p style="background-color: rgba(0, 0, 0, 0.718);font-size: 30px;text-align: center; margin-left: 10%;margin-right: 10%;">About uss.....!</p>
+     <div class="content-box">
+      <p>
+         <h3>About Crop Vision</h3>
+        Welcome to Crop Vision, where the future of agriculture meets cutting-edge technology!<br> Crop Vision is an innovative machine learning project designed to transform the agricultural landscape by providing farmers and agricultural experts with precise crop predictions based on a comprehensive analysis of critical data such as soil nitrogen levels, environmental conditions, and other influential factors.<br> Our goal is to empower farmers to make informed decisions, enhance productivity, and promote sustainable farming practices.
+
+    <h3>Introduction to Crop Vision</h3>
+
+     In the rapidly evolving world of agriculture, traditional methods are often insufficient to meet the growing demands for food production and environmental sustainability. <br>Crop Vision addresses this challenge by leveraging the power of machine learning to predict the most suitable crops for specific land areas.<br> By analyzing a multitude of data points, including soil composition, weather patterns, and other environmental variables, our platform delivers actionable insights that can significantly improve crop yield and quality.
+
+    <h3> Our Mission</h3>
+
+     At Crop Vision, our mission is to revolutionize agriculture through the integration of advanced technology.<br> We aim to provide farmers with the tools they need to maximize productivity while minimizing environmental impact.<br> Our platform is designed to enhance food security, reduce agricultural waste, and promote sustainable farming practices that are essential for the health of our planet.
+      </p>
+       
+    </div>
+</div>
+<br><br><br>
+<p style="background-color: rgba(0, 0, 0, 0.614);font-size: 30px;text-align: center;margin-left: 10%;margin-right: 10%;">Contact Detail.....!</p>
+<div class="contact-form">
+  <marquee direction="left"><h2>Contact Us</h2></marquee> 
+  <form action="/contact" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Enter your soil detilas as per N,P,K,Tem,PH,Rain " required></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+</main>
+<footer>
+  
+</footer>-->
+  </body>
+  
+</html>

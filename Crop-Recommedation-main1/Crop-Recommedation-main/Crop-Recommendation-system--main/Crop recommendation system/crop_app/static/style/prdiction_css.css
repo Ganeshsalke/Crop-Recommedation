@@ -1,0 +1,22 @@
+body {
+    background-image: url('image.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px #333;
+  }
+  h4{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  h5{
+    font-size: larger;
+    color: rgb(222, 224, 219);
+    background-color: chocolate;
+  }
